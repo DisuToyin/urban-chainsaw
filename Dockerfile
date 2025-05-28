@@ -5,13 +5,13 @@ FROM node:22.11.0
 WORKDIR /app
 
 COPY package.json .
-# RUN npm install 
+RUN npm install 
 
-ARG NODE_ENV
-RUN if [ "$NODE_ENV" = "development"]; \
-        then npm install; \
-        else npm install --only=production; \
-        fi
+# ARG NODE_ENV
+# RUN if [ "$NODE_ENV" = "development"]; \
+#         then npm install; \
+#         else npm install --only=production; \
+#         fi
 COPY . ./
 
 EXPOSE 5000

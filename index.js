@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h1>😂 Random Joke Generator</h1>
+          <h1>😂 The Joker</h1>
           <p>${randomJoke}</p>
           <button onclick="window.location.reload()">Another One</button>
         </div>
